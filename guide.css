@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background: #020817;
+    text-align: left;
+    padding: 50px 15%;
+    line-height: 1.6;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 15%;
+    background: #020817;
+}
+
+.logo {
+    margin-top: 0px;
+    margin-left: 250px;
+    font-size: 34px;
+    font-weight: 600;
+    color: #FFC916;
+}
+
+.content {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background: #020817;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: auto;
+}
+
+h1,
+h2,
+h3 {
+    color: #E6F497;
+}
+
+ul,
+ol {
+    padding-left: 20px;
+    font-size: 16px;
+}
+
+li {
+    margin: 5px 0;
+}
+
+a {
+    color: #FFC916;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+code {
+    background: #262B38;
+    padding: 10px;
+    border-radius: 5px;
+    display: block;
+    color: #FFC916;
+    font-size: 16px;
+    font-family: "Courier New", monospace;
+    overflow-x: auto;
+    margin: 10px 0;
+}
+
+pre {
+    margin: 10px 0;
+    padding: 10px;
+    background: #1A1D26;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background: #1A1D26;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #262B38;
+}
+
+th {
+    background: #262B38;
+    color: #E6F497;
+    font-weight: bold;
+}
+
+td {
+    color: white;
+}
+
+.issue {
+    background: #1A1D26;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.issue h3 {
+    color: #FFC916;
+}
+
+.issue h4 {
+    color: #E6F497;
+    margin-top: 10px;
+}
+
+.issue ul {
+    padding-left: 20px;
+}
+
+.issue pre {
+    background: #262B38;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+}

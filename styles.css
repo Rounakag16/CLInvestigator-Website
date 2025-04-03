@@ -1,0 +1,251 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    background: #020817;
+    text-align: center;
+}
+
+.no-select {
+    user-select: none;
+    /* Prevent text selection */
+    -webkit-user-select: none;
+    /* Safari */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+}
+
+
+@font-face {
+    font-family: 'logofont';
+    src: url(fonts/NeueMachina-Regular.otf);
+    font-weight: thin;
+    font-style: thin;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #020817;
+}
+
+.logo {
+    font-family: 'logofont';
+    font-size: 34px;
+    font-weight: bold;
+    color: #FFC916;
+    text-shadow: 3px 3px #D33F49;
+}
+
+.extra a {
+    font-family: 'logofont';
+    font-size: 25px;
+    font-weight: bold;
+    color: #FFC916;
+    text-decoration: none;
+}
+
+.hero h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 44px;
+    color: #E6F497;
+    margin: 0;
+    margin-top: 90px;
+    line-height: .4;
+}
+
+.hero h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 40px;
+    color: #E6F497;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.cube-container img {
+    height: 273.96px;
+    width: 255px;
+    animation: float 3s infinite ease-in-out alternate;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.command-line {
+    background: #262B38;
+    display: flex;
+    padding: 15px;
+    border-radius: 20px;
+    max-width: 255px;
+    margin: 20px auto;
+    cursor: pointer;
+}
+
+#clone {
+    margin-left: 12px;
+}
+
+#command {
+    margin: 0;
+    font-family: 'logofont';
+    margin-left: 27px;
+    font-size: 20px;
+}
+
+.copy-btn {
+    background: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.toast {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 10;
+}
+
+
+.download-buttons button {
+    margin: 20px;
+    padding: 15px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.btn-yellow {
+    font-family: 'logofont';
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #ffc107;
+    margin: 10px 5px;
+    color: black;
+    transition: 0.3s;
+}
+
+.btn-yellow i,
+.btn-dark i {
+    margin-right: 13px;
+}
+
+.btn-yellow:hover {
+    background-color: #e6a800;
+}
+
+.btn-dark {
+    font-family: 'logofont';
+    font-weight: 600;
+    font-size: 16px;
+    margin: 10px 5px;
+    background: #333;
+    color: white;
+}
+
+.floating-icons {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    /* Prevent interaction */
+    z-index: -10;
+    /* Push behind everything */
+}
+
+.icon {
+    position: absolute;
+    height: 86px;
+    width: 86px;
+    opacity: 0.6;
+    transition: transform 0.1s linear;
+}
+
+#rotate1 {
+    transform: rotate(350deg);
+}
+
+#rotate2 {
+    transform: rotate(359deg);
+}
+
+/* .contri {
+    margin-top: 120px;
+}
+
+.contri h2 {
+    font-family: "Poppins", sans-serif;
+} */
+
+.contribution-card {
+    width: 60%;
+    background: #262B38;
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px auto;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 130px;
+}
+
+.contribution-text {
+    width: 75%;
+}
+
+.contribution-text h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #FFC916;
+}
+
+.contribution-text p {
+    font-family: 'logofont';
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.contribute-img {
+    margin-top: 20px;
+    margin-right: 25px;
+    width: 150px;
+    height: 150px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.contribute-img:hover {
+    transform: scale(1.1);
+}

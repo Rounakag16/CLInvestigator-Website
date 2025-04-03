@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CLInvestigator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/Logo.png">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo no-select">CLInvestigator</div>
+        <div class="extra no-select"><a href="guide.html" target="_blank">Guide</a></div>
+    </nav>
+
+    <section class="hero">
+        <h1 class="no-select">Download, debug, dominate!</i></h1>
+        <h2 class="no-select">Supercharge your code, with AI-driven fixes, reviews, and snippets.</h2>
+        <div class="cube-container no-select">
+            <img src="assets/Logo.png" alt="CLInvestigator Logo" draggable="false" />
+        </div>
+        <div onclick="copyCommand()" class="command-line">
+            <button onclick="copyCommand()" class="copy-btn"><i id="clone"
+                    class="fa-regular fa-clone fa-flip-vertical fa-xl" style="color: #ffffff;"></i></button>
+            <p id="command">npm i ohmyfix</p>
+        </div>
+        <div id="toast" class="toast no-select">Copied to clipboard!</div>
+        <div class="download-buttons ">
+            <a href="https://github.com/thedvlprguy/CLInvestigator" target="_blank">
+                <button id="terminal-btn" class="btn-yellow no-select">
+                    <i class="fa-brands fa-github fa-xl no-select" style="color: #020817;"></i>Download Terminal
+                </button>
+            </a>
+            <a href="https://www.npmjs.com/package/ohmyfix" target="_blank">
+                <button id="package-btn" class="btn-dark no-select">
+                    <i class="fa-brands fa-github fa-xl no-select"></i>Download Package
+                </button>
+            </a>
+        </div>
+    </section>
+    <div class="floating-icons">
+        <img src="assets/Electron.svg" class="icon no-select" draggable="false" />
+        <img src="assets/Group.svg" class="icon no-select" draggable="false" />
+        <img src="assets/Npm.svg" class="icon no-select" id="rotate2" draggable="false" />
+        <img src="assets/React.svg" class="icon no-select" draggable="false" />
+        <img src="assets/Electron.svg" class="icon no-select" draggable="false" />
+        <img src="assets/Group.svg" class="icon no-select" draggable="false" />
+        <img src="assets/Npm.svg" class="icon no-select" draggable="false" />
+        <img src="assets/React.svg" class="icon no-select" draggable="false" />
+        <img src="assets/React.svg" class="icon no-select" draggable="false" />
+        <img src="assets/Electron.svg" class="icon no-select" draggable="false" />
+        <img src="assets/Npm.svg" class="icon no-select" id="rotate1" draggable="false" />
+    </div>
+
+    <!-- <div class="contri">
+        <h2>Become a Contributor</h2>
+    </div> -->
+    <div class="contribution-card">
+        <div class="contribution-text">
+            <h2>Become a Contributor</h2>
+            <p>By contributing to CLInvestigator, you help improve an AI-driven CLI tool that makes coding easier.
+                Your contributions ensure better debugging, efficient fixes, and enhanced performance for developers
+                worldwide.
+                Join our open-source journey and be part of something amazing!</p>
+        </div>
+        <a href="https://github.com/thedvlprguy/CLInvestigator" target="_blank">
+            <img src="assets/Logo.png" alt="Contribute" class="contribute-img">
+        </a>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

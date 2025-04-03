@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide - CLInvestigator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/Logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="guide.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">CLInvestigator Guide</div>
+    </nav>
+
+    <section class="content">
+
+        <h2>Overview</h2>
+        <p style="margin-left: 15px;">CLInvestigator is a powerful AI-driven Command Line Interface (CLI) tool designed
+            to streamline the coding
+            process for developers. It intelligently resolves dependency conflicts, ensuring smooth package
+            installations and project setup. The tool offers in-depth code reviews, identifying potential errors,
+            inefficiencies, and best practices to improve code quality. Additionally, it generates helpful code
+            snippets, reducing development time and effort.
+
+            Beyond that, CLInvestigator provides real-time linting to enforce coding standards, debugging assistance to
+            quickly pinpoint and fix issues, and customizable shortcut management for an optimized workflow. It also
+            features an intelligent terminal integration, allowing developers to interact seamlessly with AI-powered
+            suggestions, making coding faster and more efficient. Whether you're working on a complex project or just
+            need quick fixes, CLInvestigator enhances productivity by automating and simplifying key development tasks.
+        </p>
+    </section>
+    <section class="content">
+        <h1>Installation Guide</h1>
+        <div style="margin-left: 15px;">
+
+            <h2>Step 1: Check Prerequisites</h2>
+            <div style="margin-left: 20px;">
+                <p>Before installing CLInvestigator, ensure you have the following dependencies:</p>
+                <ul>
+                    <li><strong>Node.js</strong> (version 14 or later)</li>
+                    <li><strong>npm</strong> (version 6 or later)</li>
+                </ul>
+                <p>To check if they are installed, run:</p>
+                <pre><code>node -v   # Displays the installed Node.js version
+npm -v    # Displays the installed npm version</code></pre>
+                <p>If missing, download the latest <a href="https://nodejs.org/" target="_blank">Node.js</a>.</p>
+            </div>
+
+
+            <h2>Step 2: Install CLInvestigator</h2>
+            <div style="margin-left: 20px;">
+                <h3>Option 1: Global Installation (Recommended)</h3>
+                <div style="margin-left: 25px;">
+                    <p>To install CLInvestigator globally, run:</p>
+                    <pre><code>npm install -g ohmyfix</code></pre>
+                    <p>✅ This allows you to use <code>ohmyfix</code> from anywhere in your terminal.</p>
+                </div>
+                <h3>Option 2: One-Time Execution</h3>
+                <div style="margin-left: 25px;">
+                    <p>For a temporary run without installation, use:</p>
+                    <pre><code>npx ohmyfix --help</code></pre>
+                    <p>✅ This runs the CLI without permanently installing it.</p>
+                </div>
+
+            </div>
+
+
+            <h2>Step 3: Verify Installation</h2>
+            <div style="margin-left: 2  0px;">
+
+                <p>Check if CLInvestigator was installed successfully by running:</p>
+                <pre><code>ohmyfix --version</code></pre>
+                <p>If installed correctly, it will display the version number.</p>
+
+                <p>Now you're all set to use CLInvestigator for debugging, linting, and more!</p>
+            </div>
+        </div>
+    </section>
+    <section class="content">
+        <h1>Getting Started</h1>
+        <div style="margin-left: 15px;">
+            <h2>Step 1: Accessing CLInvestigator</h2>
+            <div style="margin-left: 20px;">
+                <p>After installation, check available commands using:</p>
+                <pre><code>npx ohmyfix --help</code></pre>
+                <p>✅ This command will display all available features and options.</p>
+            </div>
+            <h2>Step 2: Running the CLI</h2>
+            <div style="margin-left: 20px;">
+                <h3>🔧 Fixing Errors in a Specific File</h3>
+                <p>To automatically detect and fix errors in a JavaScript file, run:</p>
+                <pre><code>npx ohmyfix file.js --shortcut</code></pre>
+                <p>This applies intelligent fixes to common issues and optimizes the code structure.</p>
+
+                <h3>🤖 Performing an AI-Powered Code Review</h3>
+                <p>Analyze your code with AI-driven suggestions for improvement:</p>
+                <pre><code>npx ohmyfix ai file.js</code></pre>
+                <p>This scans the file for best practices, potential bugs, and optimizations.</p>
+
+                <h3>🐞 Debugging a File</h3>
+                <p>For real-time debugging insights, run:</p>
+                <pre><code>npx ohmyfix debug file.js</code></pre>
+                <p>This highlights issues and offers debugging suggestions.</p>
+            </div>
+            <p>Now you're ready to <strong>supercharge your development workflow</strong> with CLInvestigator! 🚀</p>
+        </div>
+
+    </section>
+    <section class="content">
+        <h1>Commands & Usage</h1>
+        <div style="margin-left: 15px;">
+            <h2>General Commands</h2>
+            <div style="margin-left: 20px;">
+                <table>
+                    <tr>
+                        <th>Command</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td><code>npx ohmyfix --help</code></td>
+                        <td>Display all available commands and options</td>
+                    </tr>
+                    <tr>
+                        <td><code>npx ohmyfix -V</code></td>
+                        <td>Check the CLI version</td>
+                    </tr>
+                    <tr>
+                        <td><code>npx ohmyfix setup</code></td>
+                        <td>Set up Google Generative AI API key</td>
+                    </tr>
+                </table>
+            </div>
+            <h2>Code Fixing & Review</h2>
+            <div style="margin-left: 20px;">
+                <table>
+                    <tr>
+                        <th>Command</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td><code>npx ohmyfix ai file.js</code></td>
+                        <td>AI-powered code review and improvements</td>
+                    </tr>
+                    <tr>
+                        <td><code>npx ohmyfix snippets</code></td>
+                        <td>Generate reusable code snippets</td>
+                    </tr>
+                    <tr>
+                        <td><code>npx ohmyfix lint file.js</code></td>
+                        <td>Lint and fix syntax errors</td>
+                    </tr>
+                    <tr>
+                        <td><code>npx ohmyfix debug file.js</code></td>
+                        <td>Debug and resolve common coding issues</td>
+                    </tr>
+                    <tr>
+                        <td><code>npx ohmyfix snippetfix file.js</code></td>
+                        <td>Fix code errors in a selected snippet (any language)</td>
+                    </tr>
+                </table>
+            </div>
+            <h2>Shortcut Management</h2>
+            <div style="margin-left: 20px;">
+                <table>
+                    <tr>
+                        <th>Command</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td><code>npx ohmyfix shortcuts</code></td>
+                        <td>Manage custom coding shortcuts and aliases</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+    <section class="content">
+        <h1>Terminal Integration</h1>
+        <div style="margin-left: 15px;">
+            <p>
+                CLInvestigator also includes an AI-powered terminal that enhances the CLI experience with:
+            </p>
+            <ul>
+                <li>Real-time AI suggestions</li>
+                <li>Command autocompletion</li>
+                <li>Instant error resolution</li>
+            </ul>
+        </div>
+        <h2>Installing the Terminal</h2>
+        <div style="margin-left: 15px;">
+            <p>
+                Download the terminal from the official GitHub repository: <a
+                    href="https://github.com/thedvlprguy/CLInvestigator" target="_blank">Github Link</a>
+            </p>
+            <p>
+                Follow the installation guide provided in the repository to set up and configure the terminal.
+            </p>
+        </div>
+    </section>
+    <section class="content">
+        <h1>Troubleshooting</h1>
+        <div style="margin-left: 15px;">
+            <p>When using <strong>CLInvestigator</strong>, you might encounter certain
+                issues while setting up or running
+                commands. Below are some common problems along with their solutions.</p>
+            <div class="issue" style="margin-left: 20px;">
+                <h3>🛑 Issue: "Command not found"</h3>
+                <p style="margin-left: 25px;">If you see a <strong>"command not found"</strong> error when trying to run
+                    <code>ohmyfix</code>it
+                    usually means the installation wasn't successful or <code>npm</code> isn't configured correctly.
+                </p>
+
+                <h4>✅ Solution:</h4>
+                <div style="margin-left: 25px;">
+                    <ul>
+                        <li>Ensure <strong>Node.js</strong> and <strong>npm</strong> are installed. You can check their
+                            versions:</li>
+                    </ul>
+                    <pre><code>node -v
+npm -v</code></pre>
+
+                    <ul>
+                        <li>If missing, install the latest <a href="https://nodejs.org/">Node.js</a>.</li>
+                        <li>Reinstall CLInvestigator globally:</li>
+                    </ul>
+                    <pre><code>npm install -g ohmyfix</code></pre>
+
+                    <ul>
+                        <li>Verify the installation:</li>
+                    </ul>
+                    <pre><code>npx ohmyfix --help</code></pre>
+                </div>
+
+            </div>
+
+            <div class="issue" style="margin-left: 20px;">
+                <h3>🔑 Issue: API key setup failure</h3>
+                <p style="margin-left: 25px;">If you face errors while setting up the <strong>Google Generative AI API
+                        key</strong>, follow these
+                    steps:</p>
+
+                <h4>✅ Solution:</h4>
+                <div style="margin-left: 25px;">
+                    <ul>
+                        <li>Double-check that your API key is valid and correctly entered.</li>
+                        <li>Ensure you have an active internet connection.</li>
+                        <li>Re-run the setup command:</li>
+                    </ul>
+                    <pre><code>npx ohmyfix setup</code></pre>
+
+                    <ul>
+                        <li>If the issue persists, visit <a
+                                href="https://console.cloud.google.com/apis/credentials">Google
+                                API
+                                Key Management</a> and generate a new key.</li>
+                    </ul>
+                </div>>
+
+            </div>
+        </div>
+    </section>
+    <section class="content">
+        <h1>Contributions</h1>
+        <p style="margin-left: 25px;">We <strong>welcome and appreciate</strong> contributions from developers who want
+            to enhance
+            <strong>CLInvestigator</strong>. Whether you’re fixing bugs, adding features, or improving documentation,
+            your help makes this tool better for everyone!
+        </p>
+
+        <h2>How to Contribute</h2>
+        <div style="margin-left: 25px;">
+            <ol>
+                <li><strong>Fork the Repository:</strong> Visit our <a
+                        href="https://github.com/yourrepo/CLInvestigator">GitHub Repository</a> and click "Fork".</li>
+                <li><strong>Create a New Branch:</strong> Use this naming convention:<br>
+                    <pre><code>git checkout -b feature/new-feature</code></pre>
+                </li>
+                <li><strong>Make Your Changes:</strong> Implement features, fix bugs, or update documentation.</li>
+                <li><strong>Commit Your Changes:</strong> Use a clear commit message:<br>
+                    <pre><code>git commit -m "Added new feature: feature description"</code></pre>
+                </li>
+                <li><strong>Push and Create a Pull Request:</strong><br>
+                    <pre><code>git push origin feature/new-feature</code></pre>
+                    Open a <strong>Pull Request (PR)</strong> on GitHub.
+                </li>
+            </ol>
+
+        </div>
+
+        <h1>Support</h1>
+        <div style="margin-left: 25px;">
+            <p>If you encounter any issues or need assistance:</p>
+            <ul>
+                <li><strong>Report Issues:</strong> Create a <a
+                        href="https://github.com/yourrepo/CLInvestigator/issues">GitHub Issue</a>.</li>
+                <li><strong>Contact Us:</strong> Reach out via email at <a
+                        href="mailto:support@example.com">support@example.com</a>.</li>
+            </ul>
+
+        </div>
+
+        <h1>License</h1>
+        <p style="margin-left: 25px;"><strong>CLInvestigator</strong> is <strong>open-source</strong> and licensed under
+            the <strong>MIT
+                License</strong>. Feel free to <strong>use, modify, and distribute</strong> it while following the
+            license terms.</p>
+        <p style="margin-left: 25px;">🔗 Read the full <a href="https://opensource.org/licenses/MIT">MIT License</a>.
+        </p>
+
+        <center>
+            <h1>🚀 Happy Coding with CLInvestigator! 🎉</h1>
+        </center>
+    </section>
+    <script src="app.js"></script>
+</body>
+
+</html>
