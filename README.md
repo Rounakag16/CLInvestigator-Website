@@ -79,7 +79,3 @@ Contributions are welcome! If you'd like to improve or modify the project, follo
 ## Contact
 
 If you have any questions or feedback, feel free to reach out.
-
----
-
-Enjoy building with **Webpage Project**! 🚀
