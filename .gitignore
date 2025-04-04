@@ -1,0 +1,28 @@
+# Environment files
+.env
+
+# System files
+.DS_Store
+
+# Node modules
+node_modules/
+
+# Build directories
+dist/
+build/
+
+# Logs
+logs/
+*.log
+
+# IDE specific files
+.vscode/
+.idea/
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Local development files
+*.local
